@@ -1,0 +1,244 @@
+.prices {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+.prices__list {
+  display: flex;
+  justify-content: space-around;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  @include mobile {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.price__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.price h3 {
+  text-align: left;
+  font: normal normal bold 20px/1px Raleway;
+  letter-spacing: 0px;
+  color: #13253B;
+  opacity: 1;
+  margin: 10px 0;
+}
+
+.price ul {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  @include mobile {
+    align-items: flex-start;
+  }
+}
+
+.price ul li {
+  text-align: center;
+  font: normal normal normal 14px/41px Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  @include mobile {
+    text-align: left;
+  }
+}
+
+.price2 ul li {
+  line-height: 45px;
+}
+
+.price ul li img {
+  width: 5px;
+  padding: 2px;
+  border: 1px solid var(--primary-color3);
+  border-radius: 2px;
+  opacity: 1;
+  margin-right: 10px;
+}
+
+.price ul li span {
+  text-align: center;
+  font: normal normal bold 9px/10px Raleway;
+  letter-spacing: 0px;
+  color: #EB476E;
+  opacity: 1;
+  border: 1px solid #EB476E;
+  border-radius: 2px;
+  opacity: 1;
+  margin-right: 10px;
+  padding: 0 2px;
+}
+
+.price__box {
+  width: 30%;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  @include mobile {
+    width: 90%;
+  }
+}
+
+.price .limited__title {
+  text-align: left;
+  font: normal normal bold 12px/1px Raleway;
+  letter-spacing: 0px;
+  color: #13253B;
+  opacity: 1;
+  margin: 5px;
+}
+
+.price1 {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid var(--primary-color2);
+  border-radius: 18px;
+  opacity: 1;
+  padding: 34px;
+  width: 90%;
+  height: 90%;
+  @include mobile {
+    padding: 15px;
+  }
+}
+
+.price1 h4 {
+  font: normal normal 300 46px/2px Open Sans;
+  letter-spacing: 0px;
+  color: var(--primary-color2);
+  opacity: 1;
+  padding: 40px;
+  @include mobile {
+    padding: 40px 15px;
+  }
+}
+
+.begin__button1 {
+  background-color: var(--primary-color2);
+  padding: 5px 30px;
+  text-decoration: none;
+  font: normal normal bold 13px/41px Open Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  bottom: -3px;
+  @include mobile {
+    bottom: -30px;
+    padding: 10px 57px;
+  }
+}
+
+.price2 {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid var(--primary-color1);
+  box-shadow: 5px 10px 27px #07ACE629;
+  border-radius: 18px;
+  opacity: 1;
+  padding: 34px;
+  width: 100%;
+  @include mobile {
+    margin: 30px 0;
+padding: 15px;
+  }
+}
+
+.price2 h4 {
+  text-align: left;
+  font: normal normal 300 46px/2px Open Sans;
+  letter-spacing: 0px;
+  color: var(--primary-color1);
+  opacity: 1;
+  padding: 40px;
+  @include mobile {
+    padding: 40px 15px;
+  }
+}
+
+.begin__button2 {
+  background-color: var(--primary-color1);
+  padding: 5px 30px;
+  text-decoration: none;
+  font: normal normal bold 13px/41px Open Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  bottom: -25px;
+  box-shadow: 5px 10px 14px #07ACE629;
+  @include mobile {
+    bottom: 0px;
+    padding: 10px 57px;
+  }
+}
+
+.price3 {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid var(--primary-color3);
+  border-radius: 18px;
+  opacity: 1;
+  padding: 34px;
+  width: 90%;
+  height: 90%;
+  box-sizing: border-box;
+  @include mobile {
+    padding: 15px;
+  }
+}
+
+.price3 h4 {
+  text-align: left;
+  font: normal normal 300 46px/2px Open Sans;
+  letter-spacing: 0px;
+  color: var(--primary-color3);
+  opacity: 1;
+  padding: 40px;
+  @include mobile {
+    padding: 40px 15px;
+  }
+}
+
+.begin__button3 {
+  background-color: var(--primary-color3);
+  padding: 5px 30px;
+  text-decoration: none;
+  font: normal normal bold 13px/41px Open Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  bottom: -3px;
+  @include mobile {
+    bottom: -30px;
+    padding: 10px 57px;
+  }
+}

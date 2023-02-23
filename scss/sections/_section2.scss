@@ -1,0 +1,245 @@
+.benefits__section {
+  background: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.benefit {
+  display: flex;
+  justify-content: space-between;
+  margin: 37px 0;
+  height: 400px;
+  @include mobile {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+
+.benefit h3 {
+  text-align: left;
+  font: normal normal normal 36px/42px Raleway;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.benefit p {
+  text-align: left;
+  font: normal normal normal 16px/22px Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin: 50px 0;
+  @include mobile {
+    margin: 20px 0;
+  }
+}
+
+.benefit1__text,
+.benefit2__text {
+  padding: 0px 35px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  @include mobile {
+    width: auto;
+    padding: 20px 35px;
+  }
+}
+
+.benefit__picture {
+  height: 100%;
+  width: 50%;
+  @include mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    margin: 70px 0;
+  }
+}
+
+.benefit1 {
+  background-color: white;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.picture1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  @include mobile {
+    justify-content: center;
+  }
+}
+
+.picture1 img {
+  z-index: 3;
+  width: 80%;
+  position: absolute;
+  bottom: 4em;
+  @include mobile {
+    position: relative;
+    bottom: auto;
+    max-height: 300px;
+  }
+}
+
+.picture1__back {
+  background: var(--primary-color2);
+  opacity: 1;
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  transform: rotate(45deg);
+  z-index: 2;
+  position: absolute;
+  right: 6em;
+  top: 4em;
+  @include mobile {
+    top: 0;
+    right: 1em;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.benefit1__text::after {
+  content: "";
+  opacity: 1;
+  width: 328px;
+  height: 4px;
+  background-color: var(--primary-color2);
+  display: block;
+  @include mobile {
+    display: none;
+  }
+}
+
+.benefit2 {
+  background-color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.picture2 {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 100%;
+  box-sizing:border-box;
+  position: relative;
+  @include mobile {
+    justify-content: center;
+  }
+}
+
+.picture2 img {
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  left: 50px;
+  height: 90%;
+  @include mobile {
+    position: relative;
+    max-height: 300px;
+    top: 10px;
+    left: 30px;
+    width: 80%;
+  }
+}
+
+.picture2__back {
+  background: var(--primary-color1);
+  opacity: 1;
+  width: 350px;
+  height: 350px;
+  border-radius: 200px;
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 1;
+  left: 3em;
+  top: 1em;
+  @include mobile {
+    top: auto;
+    left: auto;
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
+.benefit2__text::after {
+  content: "";
+  opacity: 1;
+  width: 328px;
+  height: 4px;
+  background-color: var(--primary-color1);
+  display: block;
+  @include mobile {
+    display: none;
+  }
+}
+
+.benefit3 {
+  background-color: white;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.picture3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  margin-left: 37px;
+  background-color: var(--primary-color3);
+  @include mobile {
+    width: 100%;
+    margin: auto;
+    padding-top: 30px;
+  }
+}
+
+.benefit3__text {
+  margin: 90px 35px;
+  display: flex;
+  flex-direction: column;
+  @include mobile {
+    margin: 20px 35px;
+  }
+}
+
+.benefit3__text::after {
+  content: "";
+  opacity: 1;
+  width: 328px;
+  height: 4px;
+  background-color: var(--primary-color3);
+  display: block;
+  @include mobile {
+    display: none;
+  }
+}

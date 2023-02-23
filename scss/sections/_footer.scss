@@ -1,0 +1,48 @@
+
+.footer {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F7F7F7 0% 0% no-repeat padding-box;
+  box-shadow: 0px -5px 40px #00000029;
+  opacity: 1;
+}
+
+.footer__columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.logo__footer {
+  text-align: left;
+  font: normal normal 300 26px/30px Raleway;
+  letter-spacing: 0px;
+  color: #08A6E4;
+  opacity: 1;
+  padding: 5px 0;
+}
+
+.footer__copyright {
+  text-align: left;
+  font: normal normal normal 11px/15px Open Sans;
+  letter-spacing: 0px;
+  color: #A5A5A5;
+  opacity: 1;
+}
+
+.footer__sm{
+  display: flex;
+}
+
+.footer__sm a {
+  margin-left: 20px;
+}

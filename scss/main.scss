@@ -1,0 +1,45 @@
+@import 'settings/reset';
+@import 'settings/variables';
+@import 'settings/mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+
+.container {
+  width: 1325px;
+  @include tablet {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+  @include mobile {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+}
+
+.smaller__container {
+  width: 1024px;
+  @include mobile {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+}
+
+@import "sections/nav";
+@import "sections/header";
+@import "sections/section1";
+@import "sections/section2";
+@import "sections/pricing";
+@import "sections/contact";
+@import "sections/footer";

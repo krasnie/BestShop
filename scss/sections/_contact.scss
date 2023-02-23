@@ -1,0 +1,126 @@
+
+.section__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 0;
+}
+
+.contact__columns {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 35px 0;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.contact__title h3 {
+  text-align: left;
+  font: normal normal normal 49px/57px Raleway;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.contact__title h4 {
+  text-align: left;
+  font: normal normal normal 16px/22px Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-top: 22px;
+  margin-bottom: 42px;
+}
+
+.contact__icons {
+  display: flex;
+  align-items: center;
+}
+
+.contact__icons p {
+  text-align: left;
+  font: normal normal 600 16px/22px Open Sans;
+  letter-spacing: 0px;
+  color: #A5A5A5;
+  opacity: 1;
+  margin: 0 10px;
+}
+
+.contact__column {
+  width: 40%;
+  margin: 0 8px;
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  text-align: left;
+  font: normal normal bold 11px/15px Open Sans;
+  letter-spacing: 3.28px;
+  color: #08A6E4;
+  opacity: 1;
+  margin: 10px 0;
+}
+
+.form__text {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+}
+
+.contact__checkbox {
+  appearance: none;
+  border: 1px solid #B2B2B2;
+  width: 50px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.form__consent :checked {
+  background-image: url(../images/Checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__consent {
+  text-align: left;
+  font: normal normal normal 12px/17px Open Sans;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+  text-align: justify;
+  display: flex;
+}
+
+.form__button {
+  background: var(--primary-color1);
+  box-shadow: 5px 10px 14px #07ACE629;
+  border: none;
+  border-radius: 35px;
+  opacity: 1;
+  padding: 15px 90px;
+  text-align: left;
+  font: normal normal bold 13px/18px Open Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: flex-end;
+  @include mobile {
+    padding: 25px 97px;
+  }
+}
